@@ -25,7 +25,6 @@ export const initialState:StateType = {
 
 
 // Reducers
-
 export const counterReducer = (state:StateType = initialState, action:ActionsType ):StateType =>{
     switch (action.type) {
         case ACTION_TYPE.INCREMENT_VALUE: {

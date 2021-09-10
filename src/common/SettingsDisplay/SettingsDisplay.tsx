@@ -8,7 +8,7 @@ import {useDispatch} from "react-redux";
 
 type SettingsDisplayType = {
     state:StateType
-    actionCreator:Function
+    actionCreator:(value:number)=>ActionsType
     title:string
     value:number
 }
@@ -19,10 +19,18 @@ export function SettingsDisplay(props:SettingsDisplayType) {
 
 
     const onChangeHandler = (e:ChangeEvent<HTMLInputElement>) => {
-        let value = Number(e.currentTarget.value)
-        const action = props.actionCreator(value)
-        dispatch(action)
+        let value = e.currentTarget.value
+        if (!isFinite(+value)) return
+        else {
+            const action = props.actionCreator(+value)
+            dispatch(action)
+        }
     }
+
+
+
+
+
 
     return (
         <div>

@@ -1,0 +1,22 @@
+.display {
+    background-color: black;
+    width: 300px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 50px;
+    color: white;
+
+}
+
+.value {
+    color: white;
+    text-align: center;
+}
+
+redError {
+    color:red;
+    text-align: center;
+}
+
