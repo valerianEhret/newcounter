@@ -1,38 +1,69 @@
+body {
+    background-color: #2d3436;
+}
+
+
 .App {
 
 }
 
 .container {
-    background-color: cyan;
-    width: 50%;
-    border: 1px solid;
     display: flex;
-    margin: 0 auto;
-    height: 100%;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.counter {
-    background-color: cornflowerblue;
+.settingsBlock,
+.counterBlock {
+    margin: 100px auto;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 300px;
-    height: 500px;
+    align-items: center;
+    width: 500px;
+    height: 400px;
+    background-color: #2d3436;
+    border-radius: 15px;
+    border: 5px solid cadetblue;
 }
 
 .settings {
-    background-color: aquamarine;
+    border: 5px solid cadetblue;
+    width: 450px;
+    height: 180px;
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
-    width: 300px;
-    height: 500px;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 28px;
+    font-weight: 800;
+    color: cadetblue;
 }
+
 
 .display-buttons {
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: darkgreen;
+}
+
+
+.buttons {
+    border: 5px solid cadetblue;
+    width: 450px;
+    height: 140px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.buttons button {
+    font-size: 32px;
+    font-weight: 700;
+    background-color: cadetblue;
+    border-radius: 10px;
+    outline: cadetblue;
 }
